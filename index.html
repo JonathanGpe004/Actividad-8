@@ -5,17 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temporizador con setTimeout y setInterval</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            color: #fff;
+        }
+        .container {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
         #temporizador {
-            font-size: 2em;
+            font-size: 3em;
             font-weight: bold;
-            color: #333;
         }
     </style>
 </head>
 <body>
 
-    <h1>Temporizador de cuenta regresiva</h1>
-    <p id="temporizador">50</p>
+    <div class="container">
+        <h1>Temporizador de cuenta regresiva</h1>
+        <p id="temporizador">50</p>
+    </div>
 
     <script>
         var contador = 50; // Valor inicial del temporizador
